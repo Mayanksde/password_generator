@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Password-Generator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Password Generator</h1>
+        <div class="displayContainer">
+          <input
+            type="text"
+            readonly
+            placeholder="Password"
+            class="displayInput"
+          />
+          <button class="copyBtn" onclick="scaleCopyButton()">Copy</button>
+        </div>
+        <div class="inputContainer">
+          <!-- creating password length container  -->
+          <div class="lengthContainer">
+            <p>Password length</p>
+            <p class="lengthInput">0</p>
+          </div>
+
+          <!-- creating slider  -->
+          <input type="range" min="1" max="20" class="slider" />
+          <br>
+          <!-- creating checkboxes  -->
+          <div class="allcheckboxes">
+            <div>
+              <input type="checkbox" id="forUppercase" />
+              <label for="forUppercase" class="check-labels">Include Uppercase Leters</label>
+            </div>
+            <div>
+              <input type="checkbox" id="forLowercase" />
+              <label for="forLowercase" class="check-labels">Include Lowercase Leters</label>
+            </div>
+            <div>
+              <input type="checkbox" id="forNumbers" />
+              <label for="forNumbers" class="check-labels">Include Numbers</label>
+            </div>
+            <div>
+              <input type="checkbox" id="forSymbols" />
+              <label for="forSymbols" class="check-labels">Include Symbols</label>
+            </div>
+          </div>
+
+          <!-- strength  section -->
+          <div class="strengthDiv">
+            <p>Strength</p>
+            <div class="strengthIndicator"></div>
+          </div>
+
+          <!-- generate button  -->
+          <button class="generateButton" onclick="scaleButton()">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

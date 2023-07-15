@@ -1,0 +1,31 @@
+@media (max-width:390px) {
+    html{
+        font-size: 70%;
+    }
+    .container{
+        width: 90%;
+    }
+    .displayInput{
+        width: 11rem;
+    }
+}
+@media ( (min-width:351px) and (max-width:576px))
+{
+    h1{
+        font-size: 1.1rem;
+    }
+    .displayContainer{
+        padding-top: 2rem;
+    }
+    .displayInput{
+        width: 13rem;
+        height: 1.4rem;
+        font-size: 1rem;
+    }
+    .copyBtn{
+        width: 4rem;
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
